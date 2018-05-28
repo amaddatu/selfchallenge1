@@ -1,16 +1,27 @@
+//this file should contain all the movement for our animations
+
 .animation{
+    //notice the use of the min-width variable, this is a common practice with responsive sass
     @media screen and (min-width: $currWidth){
+        //best practice is to organize by component and sub-component
+        //however in this case we can also organize by frame because we are using media queries
         #mario{
             bottom: 50px;
             left: 3%;
+
+            //it is best practice to use mixins whenever we have either repetitive css rules or
+            //css rules that require only minor adjustments like the animation frame below
             @include mariojump();
         }
+        //Starting the movement of the building back to its static position
         #building-1{
             left:100%;
         }
     }
 
+    //the increment by itself is not common practice but we use it to generate additional breakpoints
     $currWidth: $currWidth + $increment;
+
     @media screen and (min-width: $currWidth){
         #mario{
             bottom: 75px;
@@ -48,9 +59,14 @@
         #mario{
             bottom: 109px;
             left: 12%;
+
+            //this flips the animation frame horizontally
             @include flippedH();
+            //this shows mario in the stopping frame
             @include mariochangedirection();
         }
+        
+        //building-1 should now be in its static position
         #building-1{
             left:0%;
         }
@@ -63,9 +79,12 @@
             @include flippedH();
             @include mariodefault();
         }
+        //warp in our ufo for battle
         #ufo{
             opacity: .5;
         }
+
+        //this moves all the buildings to the static position
         #building-2,
         #building-3,
         #building-4{
@@ -83,6 +102,7 @@
         #ufo{
             opacity: 1;
         }
+        //the beam is now turned on
         #beam{
             opacity: 0.4;
         }
@@ -90,6 +110,7 @@
     $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
         #mario{
+            //mario's death is specified here
             @include mariodeath();
         }
     }
@@ -98,6 +119,7 @@
         #mario{
             bottom: 120px;
         }
+        //the beam is now turned off
         #beam{
             opacity: 0;
         }
@@ -116,12 +138,14 @@
     }
     $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
+        //mario disappears off screen
         #mario{
             display: none;
         }
     }
     $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
+        //the real hero of this scene shows his face
         .air-container{
             background-image: url(../images/star-wars_po-zu_porg-sneakers.png);
             background-size: 100% auto;

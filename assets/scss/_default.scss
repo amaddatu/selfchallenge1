@@ -1,14 +1,24 @@
+//we use this startWidth to determine the first "breakpoint" for the movement
 $startWidth: 350px;
-//movement by width change
+
+//this current width will be used by the movement file later on
 $currWidth: $startWidth;
+
+//this is how much a user will need to increment to see the next movement (additional "breakpoints")
 $increment: 10px;
 
 .main{
+    // this sets the minimum width for this container
     min-width: $startWidth;
 }
 .animation{
+    // this sets the minimum width for this container (use the same variable)
     min-width: $startWidth;
+
+    //this is used to contain any absolutely positioned elements
     position: relative;
+
+    //hides any element outside of the container
     overflow: hidden;
 
     #beam{
@@ -18,13 +28,17 @@ $increment: 10px;
         top: 0;
         left: 0;
         z-index: 3;
-        opacity: 0;
         background: green;
+        //this sets the default opacity to prepare for animation
+        opacity: 0; 
+        //this sets time used for the animation
         transition: opacity $marioTransitionTime;
     }
 
     #ufo{
+        //this sets the default opacity to prepare for animation
         opacity: 0;
+        //this sets time used for the animation
         transition: opacity $marioTransitionTime;
     }
 
@@ -37,7 +51,9 @@ $increment: 10px;
         padding:30px;
         background: green;
         position: relative;
+        //this sets the default left value to prepare for animation
         left: 1000%;
+        //this sets time used for the animation
         transition: left $marioTransitionTime;
     }
     .air-container{
@@ -53,10 +69,16 @@ $increment: 10px;
     #mario{
         background-image: url(../images/mario_graphics1.png);
         position: absolute;
+        z-index:2;
+        
+        //this sets the default left value to prepare for animation
         bottom:22px;
         left:0;
-        z-index:2;
+        
+        //this sets time used for the animation
         transition: width $marioTransitionTime, height $marioTransitionTime, left $marioTransitionTime, bottom $marioTransitionTime;
+        
+        //this uses the sass mixin so that we do not have to retype all the rules
         @include mariodefault();
     }
 }

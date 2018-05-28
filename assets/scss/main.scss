@@ -1,3 +1,6 @@
+//this file specifies _mario.scss which has the variables and mixins required for all the files
 @import 'mario';
+//this file specifies _default.scss which has the default position of the animation positions
 @import 'default';
+//this file specifies _movement.scss which has the animation frame movements
 @import 'movement';
