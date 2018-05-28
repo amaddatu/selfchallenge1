@@ -1,0 +1,35 @@
+$marioWidthL1: 30px;
+$marioHeightL1: 60px;
+$marioSizeL1: 778% 390%;
+$marioVPositionL1: 4.5%;
+
+@mixin mariodefault() {
+    width: $marioWidthL1;
+    height: $marioHeightL1;
+    background-size: $marioSizeL1;
+    background-position: 96% $marioVPositionL1;
+}
+@mixin mariorun1() {
+    width: $marioWidthL1;
+    height: $marioHeightL1;
+    background-size: $marioSizeL1;
+    background-position: 5% $marioVPositionL1;
+}
+@mixin mariorun2() {
+    width: $marioWidthL1;
+    height: $marioHeightL1;
+    background-size: $marioSizeL1;
+    background-position: 5% $marioVPositionL1;
+}
+@mixin mariorun3() {
+    width: $marioWidthL1;
+    height: $marioHeightL1;
+    background-size: $marioSizeL1;
+    background-position: 5% $marioVPositionL1;
+}
+@mixin mariojump() {
+    width: $marioWidthL1;
+    height: $marioHeightL1;
+    background-size: $marioSizeL1;
+    background-position: 5% $marioVPositionL1;
+}
