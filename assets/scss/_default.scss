@@ -1,5 +1,8 @@
-$startWidth: 300px;
+$startWidth: 350px;
 $animationHeight: 600px;
+//movement by width change
+$currWidth: $startWidth;
+$increment: 10px;
 //test
 .main{
     //height:$animationHeight;

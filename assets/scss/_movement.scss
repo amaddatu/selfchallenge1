@@ -1,6 +1,4 @@
 .animation{
-    //movement by width change
-    $currWidth: 300px;
     @media screen and (min-width: $currWidth){
         #mario{
             bottom: 50px;
@@ -12,7 +10,7 @@
         }
     }
 
-    $currWidth: $currWidth + 5px;
+    $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
         #mario{
             bottom: 75px;
@@ -23,7 +21,7 @@
             left:90%;
         }
     }
-    $currWidth: $currWidth + 5px;
+    $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
         #mario{
             bottom: 75px;
@@ -34,7 +32,7 @@
             left:80%;
         }
     }
-    $currWidth: $currWidth + 5px;
+    $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
         #mario{
             bottom: 100px;
@@ -45,7 +43,7 @@
             left:70%;
         }
     }
-    $currWidth: $currWidth + 5px;
+    $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
         #mario{
             bottom: 109px;
@@ -57,7 +55,7 @@
             left:0%;
         }
     }
-    $currWidth: $currWidth + 5px;
+    $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
         #mario{
             bottom: 109px;
@@ -74,13 +72,13 @@
             left:0%;
         }
     }
-    $currWidth: $currWidth + 5px;
+    $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
         #ufo{
             opacity: 1;
         }
     }
-    $currWidth: $currWidth + 5px;
+    $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
         #ufo{
             opacity: 1;
@@ -89,13 +87,13 @@
             background: blue;
         }
     }
-    $currWidth: $currWidth + 5px;
+    $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
         #mario{
             @include mariodeath();
         }
     }
-    $currWidth: $currWidth + 5px;
+    $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
         #mario{
             bottom: 120px;
@@ -104,25 +102,25 @@
             background: transparent;
         }
     }
-    $currWidth: $currWidth + 5px;
+    $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
         #mario{
             bottom: 50px;
         }
     }
-    $currWidth: $currWidth + 5px;
+    $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
         #mario{
             bottom: 0px;
         }
     }
-    $currWidth: $currWidth + 5px;
+    $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
         #mario{
             display: none;
         }
     }
-    $currWidth: $currWidth + 5px;
+    $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
         #beam{
             background-image: url(../images/star-wars_po-zu_porg-sneakers.png);
