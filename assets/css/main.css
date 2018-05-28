@@ -5,6 +5,16 @@
   min-width: 350px;
   position: relative;
   overflow: hidden; }
+  .animation #beam {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 0;
+    background: green;
+    transition: opacity 0.3s; }
   .animation #ufo {
     opacity: 0;
     transition: opacity 0.3s; }
@@ -128,7 +138,7 @@ footer {
   .animation #ufo {
     opacity: 1; }
   .animation #beam {
-    background: blue; } }
+    opacity: 0.4; } }
 
 @media screen and (min-width: 430px) {
   .animation #mario {
@@ -141,7 +151,7 @@ footer {
   .animation #mario {
     bottom: 120px; }
   .animation #beam {
-    background: transparent; } }
+    opacity: 0; } }
 
 @media screen and (min-width: 450px) {
   .animation #mario {
@@ -156,6 +166,6 @@ footer {
     display: none; } }
 
 @media screen and (min-width: 480px) {
-  .animation #beam {
+  .animation .air-container {
     background-image: url(../images/star-wars_po-zu_porg-sneakers.png);
     background-size: 100% auto; } }

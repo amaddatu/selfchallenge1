@@ -84,7 +84,7 @@
             opacity: 1;
         }
         #beam{
-            background: blue;
+            opacity: 0.4;
         }
     }
     $currWidth: $currWidth + $increment;
@@ -99,7 +99,7 @@
             bottom: 120px;
         }
         #beam{
-            background: transparent;
+            opacity: 0;
         }
     }
     $currWidth: $currWidth + $increment;
@@ -122,7 +122,7 @@
     }
     $currWidth: $currWidth + $increment;
     @media screen and (min-width: $currWidth){
-        #beam{
+        .air-container{
             background-image: url(../images/star-wars_po-zu_porg-sneakers.png);
             background-size: 100% auto;
         }
