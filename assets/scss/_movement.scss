@@ -1,0 +1,54 @@
+.animation{
+    //movement by width change
+    $currWidth: 300px;
+    @media screen and (min-width: $currWidth){
+        #mario{
+            bottom: 50px;
+            left: 3%;
+            @include mariojump();
+        }
+    }
+
+    $currWidth: $currWidth + 5px;
+    @media screen and (min-width: $currWidth){
+        #mario{
+            bottom: 75px;
+            left: 6%;
+            @include mariojump();
+        }
+    }
+    $currWidth: $currWidth + 5px;
+    @media screen and (min-width: $currWidth){
+        #mario{
+            bottom: 75px;
+            left: 6%;
+            @include mariojump();
+        }
+    }
+    $currWidth: $currWidth + 5px;
+    @media screen and (min-width: $currWidth){
+        #mario{
+            bottom: 100px;
+            left: 9%;
+            @include mariojump();
+        }
+    }
+    $currWidth: $currWidth + 5px;
+    @media screen and (min-width: $currWidth){
+        #mario{
+            bottom: 109px;
+            left: 12%;
+            @include flippedH();
+            @include mariochangedirection();
+        }
+    }
+    $currWidth: $currWidth + 5px;
+    @media screen and (min-width: $currWidth){
+        #mario{
+            bottom: 109px;
+            left: 12%;
+            @include flippedH();
+            @include mariodefault();
+        }
+    }
+}

@@ -6,8 +6,7 @@
   position: relative;
   overflow: hidden; }
   .animation #beam {
-    border: 1px solid black;
-    background: blue; }
+    border: 1px solid black; }
   .animation .everything-else-container {
     z-index: 1; }
   .animation .building {
@@ -15,7 +14,8 @@
     width: 100%;
     padding: 30px;
     background: green;
-    position: relative; }
+    position: relative;
+    left: 1000%; }
   .animation .air-container {
     padding: 30%; }
   .animation #ground {
@@ -24,15 +24,80 @@
     width: 100%;
     padding: 10px; }
   .animation #mario {
-    width: 30px;
-    height: 60px;
     background-image: url(../images/mario_graphics1.png);
     position: absolute;
     bottom: 22px;
     left: 0;
     z-index: 2;
+    transition: width 0.1s, height 0.1s, left 0.1s, bottom 0.1s;
+    width: 30px;
+    height: 60px;
     background-size: 778% 390%;
-    background-position: 5% 6%; }
+    background-position: 96% 4.5%; }
 
 footer {
   border: 1px solid black; }
+
+@media screen and (min-width: 300px) {
+  .animation #mario {
+    bottom: 50px;
+    left: 3%;
+    width: 30px;
+    height: 60px;
+    background-size: 778% 390%;
+    background-position: 77% 4.5%; } }
+
+@media screen and (min-width: 305px) {
+  .animation #mario {
+    bottom: 75px;
+    left: 6%;
+    width: 30px;
+    height: 60px;
+    background-size: 778% 390%;
+    background-position: 77% 4.5%; } }
+
+@media screen and (min-width: 310px) {
+  .animation #mario {
+    bottom: 75px;
+    left: 6%;
+    width: 30px;
+    height: 60px;
+    background-size: 778% 390%;
+    background-position: 77% 4.5%; } }
+
+@media screen and (min-width: 315px) {
+  .animation #mario {
+    bottom: 100px;
+    left: 9%;
+    width: 30px;
+    height: 60px;
+    background-size: 778% 390%;
+    background-position: 77% 4.5%; } }
+
+@media screen and (min-width: 320px) {
+  .animation #mario {
+    bottom: 109px;
+    left: 12%;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    width: 30px;
+    height: 60px;
+    background-size: 778% 390%;
+    background-position: 59% 4.5%; } }
+
+@media screen and (min-width: 325px) {
+  .animation #mario {
+    bottom: 109px;
+    left: 12%;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    width: 30px;
+    height: 60px;
+    background-size: 778% 390%;
+    background-position: 96% 4.5%; } }

@@ -2,6 +2,23 @@ $marioWidthL1: 30px;
 $marioHeightL1: 60px;
 $marioSizeL1: 778% 390%;
 $marioVPositionL1: 4.5%;
+$marioTransitionTime: 0.1s;
+
+@mixin originalH(){
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    filter: none;
+}
+
+@mixin flippedH(){
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+}
 
 @mixin mariodefault() {
     width: $marioWidthL1;
@@ -19,17 +36,24 @@ $marioVPositionL1: 4.5%;
     width: $marioWidthL1;
     height: $marioHeightL1;
     background-size: $marioSizeL1;
-    background-position: 5% $marioVPositionL1;
+    background-position: 23% $marioVPositionL1;
 }
 @mixin mariorun3() {
     width: $marioWidthL1;
     height: $marioHeightL1;
     background-size: $marioSizeL1;
-    background-position: 5% $marioVPositionL1;
+    background-position: 42% $marioVPositionL1;
 }
 @mixin mariojump() {
     width: $marioWidthL1;
     height: $marioHeightL1;
     background-size: $marioSizeL1;
-    background-position: 5% $marioVPositionL1;
+    background-position: 77% $marioVPositionL1;
 }
+@mixin mariochangedirection() {
+    width: $marioWidthL1;
+    height: $marioHeightL1;
+    background-size: $marioSizeL1;
+    background-position: 59% $marioVPositionL1;
+}
+

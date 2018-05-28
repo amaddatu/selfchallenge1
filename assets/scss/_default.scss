@@ -1,0 +1,63 @@
+$startWidth: 300px;
+$animationHeight: 600px;
+//test
+.main{
+    //height:$animationHeight;
+    min-width: $startWidth;
+}
+.animation{
+    //min-height: $animationHeight;
+    min-width: $startWidth;
+    position: relative;
+    overflow: hidden;
+
+    // .spacer-container{
+    //     position: absolute;
+    //     width: 100%;
+    //     top:0;
+    //     z-index: 0;
+    // }
+    // #hidden-spacer{
+    //     opacity: 0;
+    // }
+
+    #beam{
+        border: 1px solid black;
+    }
+
+    .everything-else-container{
+        z-index: 1;
+        //border: 1px solid blue;
+    }
+    .building{
+        border: 1px solid black;
+        width:100%;
+        padding:30px;
+        background: green;
+        position: relative;
+        left: 1000%;
+    }
+    .air-container{
+        padding:30%;
+    }
+    #ground{
+        border: 1px solid black;
+        background-color: green;
+        width:100%;
+        padding:10px;
+    }
+
+    #mario{
+        background-image: url(../images/mario_graphics1.png);
+        position: absolute;
+        bottom:22px;
+        left:0;
+        z-index:2;
+        transition: width $marioTransitionTime, height $marioTransitionTime, left $marioTransitionTime, bottom $marioTransitionTime;
+        @include mariodefault();
+    }
+}
+
+footer{
+    border: 1px solid black;
+}
