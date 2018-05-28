@@ -8,6 +8,12 @@
             "type": "shell",
             "command": "node-sass assets/scss/main.scss -o assets/css",
             "group": "build"
+        },
+        {
+            "label": "Bootstrap Compile",
+            "type": "shell",
+            "command": "node-sass assets/bootstrap-scss/bootstrap.scss -o assets/css",
+            "group": "build"
         }
     ]
 }
