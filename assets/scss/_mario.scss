@@ -3,6 +3,10 @@ $marioHeightL1: 60px;
 $marioSizeL1: 778% 390%;
 $marioVPositionL1: 4.5%;
 $marioTransitionTime: 0.3s;
+$marioWidthL4: 30px;
+$marioHeightL4: 20px;
+$marioSizeL4: 778% 670%;
+$marioVPositionL4: 92.5%;
 
 @mixin originalH(){
     -moz-transform: scaleX(1);
@@ -56,4 +60,11 @@ $marioTransitionTime: 0.3s;
     background-size: $marioSizeL1;
     background-position: 59% $marioVPositionL1;
 }
+@mixin mariodeath() {
+    width: $marioWidthL4;
+    height: $marioHeightL4;
+    background-size: $marioSizeL4;
+    background-position: 440% $marioVPositionL4;
+}
+
 

@@ -68,6 +68,11 @@
         #ufo{
             opacity: .5;
         }
+        #building-2,
+        #building-3,
+        #building-4{
+            left:0%;
+        }
     }
     $currWidth: $currWidth + 5px;
     @media screen and (min-width: $currWidth){
@@ -84,4 +89,45 @@
             background: blue;
         }
     }
+    $currWidth: $currWidth + 5px;
+    @media screen and (min-width: $currWidth){
+        #mario{
+            @include mariodeath();
+        }
+    }
+    $currWidth: $currWidth + 5px;
+    @media screen and (min-width: $currWidth){
+        #mario{
+            bottom: 120px;
+        }
+        #beam{
+            background: transparent;
+        }
+    }
+    $currWidth: $currWidth + 5px;
+    @media screen and (min-width: $currWidth){
+        #mario{
+            bottom: 50px;
+        }
+    }
+    $currWidth: $currWidth + 5px;
+    @media screen and (min-width: $currWidth){
+        #mario{
+            bottom: 0px;
+        }
+    }
+    $currWidth: $currWidth + 5px;
+    @media screen and (min-width: $currWidth){
+        #mario{
+            display: none;
+        }
+    }
+    $currWidth: $currWidth + 5px;
+    @media screen and (min-width: $currWidth){
+        #beam{
+            background-image: url(../images/star-wars_po-zu_porg-sneakers.png);
+            background-size: 100% auto;
+        }
+    }
+
 }
