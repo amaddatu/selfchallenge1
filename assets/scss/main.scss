@@ -1,9 +1,53 @@
 
-section.main{
-    height:600px;
-    min-width: 300px;
+$startWidth: 300px;
+$animationHeight: 600px;
+
+.main{
+    //height:$animationHeight;
+    min-width: $startWidth;
+}
+.animation{
+    min-height: $animationHeight;
+    min-width: $startWidth;
+    position: relative;
+    overflow: hidden;
+
+    .spacer-container{
+        position: absolute;
+        width: 100%;
+        top:0;
+        z-index: 0;
+    }
+    #hidden-spacer{
+        opacity: 0;
+    }
+
+    #beam{
+        border: 1px solid black;
+        background: blue;
+    }
+
+    .everything-else-container{
+        z-index: 1;
+        //border: 1px solid blue;
+    }
+    .building{
+        border: 1px solid black;
+        width:100%;
+        padding:20%;
+        background: green;
+        position: relative;
+    }
+    .air-container{
+        padding:30%;
+    }
+    #ground{
+        border: 1px solid black;
+        background-color: green;
+        width:100%;
+        padding:5%;
+    }
 }
 footer{
     border: 1px solid black;
-    background-color: green;
 }
