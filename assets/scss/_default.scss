@@ -25,6 +25,11 @@ $animationHeight: 600px;
         border: 1px solid black;
     }
 
+    #ufo{
+        opacity: 0;
+        transition: opacity $marioTransitionTime;
+    }
+
     .everything-else-container{
         z-index: 1;
         //border: 1px solid blue;
@@ -36,6 +41,7 @@ $animationHeight: 600px;
         background: green;
         position: relative;
         left: 1000%;
+        transition: left $marioTransitionTime;
     }
     .air-container{
         padding:30%;

@@ -7,6 +7,9 @@
             left: 3%;
             @include mariojump();
         }
+        #building-1{
+            left:100%;
+        }
     }
 
     $currWidth: $currWidth + 5px;
@@ -16,6 +19,9 @@
             left: 6%;
             @include mariojump();
         }
+        #building-1{
+            left:90%;
+        }
     }
     $currWidth: $currWidth + 5px;
     @media screen and (min-width: $currWidth){
@@ -24,6 +30,9 @@
             left: 6%;
             @include mariojump();
         }
+        #building-1{
+            left:80%;
+        }
     }
     $currWidth: $currWidth + 5px;
     @media screen and (min-width: $currWidth){
@@ -31,6 +40,9 @@
             bottom: 100px;
             left: 9%;
             @include mariojump();
+        }
+        #building-1{
+            left:70%;
         }
     }
     $currWidth: $currWidth + 5px;
@@ -41,6 +53,9 @@
             @include flippedH();
             @include mariochangedirection();
         }
+        #building-1{
+            left:0%;
+        }
     }
     $currWidth: $currWidth + 5px;
     @media screen and (min-width: $currWidth){
@@ -49,6 +64,24 @@
             left: 12%;
             @include flippedH();
             @include mariodefault();
+        }
+        #ufo{
+            opacity: .5;
+        }
+    }
+    $currWidth: $currWidth + 5px;
+    @media screen and (min-width: $currWidth){
+        #ufo{
+            opacity: 1;
+        }
+    }
+    $currWidth: $currWidth + 5px;
+    @media screen and (min-width: $currWidth){
+        #ufo{
+            opacity: 1;
+        }
+        #beam{
+            background: blue;
         }
     }
 }

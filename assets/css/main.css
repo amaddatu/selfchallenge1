@@ -7,6 +7,9 @@
   overflow: hidden; }
   .animation #beam {
     border: 1px solid black; }
+  .animation #ufo {
+    opacity: 0;
+    transition: opacity 0.3s; }
   .animation .everything-else-container {
     z-index: 1; }
   .animation .building {
@@ -15,7 +18,8 @@
     padding: 30px;
     background: green;
     position: relative;
-    left: 1000%; }
+    left: 1000%;
+    transition: left 0.3s; }
   .animation .air-container {
     padding: 30%; }
   .animation #ground {
@@ -29,7 +33,7 @@
     bottom: 22px;
     left: 0;
     z-index: 2;
-    transition: width 0.1s, height 0.1s, left 0.1s, bottom 0.1s;
+    transition: width 0.3s, height 0.3s, left 0.3s, bottom 0.3s;
     width: 30px;
     height: 60px;
     background-size: 778% 390%;
@@ -45,7 +49,9 @@ footer {
     width: 30px;
     height: 60px;
     background-size: 778% 390%;
-    background-position: 77% 4.5%; } }
+    background-position: 77% 4.5%; }
+  .animation #building-1 {
+    left: 100%; } }
 
 @media screen and (min-width: 305px) {
   .animation #mario {
@@ -54,7 +60,9 @@ footer {
     width: 30px;
     height: 60px;
     background-size: 778% 390%;
-    background-position: 77% 4.5%; } }
+    background-position: 77% 4.5%; }
+  .animation #building-1 {
+    left: 90%; } }
 
 @media screen and (min-width: 310px) {
   .animation #mario {
@@ -63,7 +71,9 @@ footer {
     width: 30px;
     height: 60px;
     background-size: 778% 390%;
-    background-position: 77% 4.5%; } }
+    background-position: 77% 4.5%; }
+  .animation #building-1 {
+    left: 80%; } }
 
 @media screen and (min-width: 315px) {
   .animation #mario {
@@ -72,7 +82,9 @@ footer {
     width: 30px;
     height: 60px;
     background-size: 778% 390%;
-    background-position: 77% 4.5%; } }
+    background-position: 77% 4.5%; }
+  .animation #building-1 {
+    left: 70%; } }
 
 @media screen and (min-width: 320px) {
   .animation #mario {
@@ -86,7 +98,9 @@ footer {
     width: 30px;
     height: 60px;
     background-size: 778% 390%;
-    background-position: 59% 4.5%; } }
+    background-position: 59% 4.5%; }
+  .animation #building-1 {
+    left: 0%; } }
 
 @media screen and (min-width: 325px) {
   .animation #mario {
@@ -100,4 +114,16 @@ footer {
     width: 30px;
     height: 60px;
     background-size: 778% 390%;
-    background-position: 96% 4.5%; } }
+    background-position: 96% 4.5%; }
+  .animation #ufo {
+    opacity: .5; } }
+
+@media screen and (min-width: 330px) {
+  .animation #ufo {
+    opacity: 1; } }
+
+@media screen and (min-width: 335px) {
+  .animation #ufo {
+    opacity: 1; }
+  .animation #beam {
+    background: blue; } }
