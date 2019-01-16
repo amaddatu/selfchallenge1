@@ -13,13 +13,45 @@
 // Sass configuration
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var wait = require('gulp-wait');
 
-gulp.task('sass', function() {
-    gulp.src('assets/scss/main.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('assets/css'))
-});
+var sassyFunction = function() { 
+    return new Promise(function(resolve, reject) {
+        console.log("got here");
+        gulp.src('assets/scss/main.scss')
+            .pipe(wait(500))
+            .pipe(sass())
+            .pipe(gulp.dest('assets/css'))
+            .on('error', function(e){
+                console.log(e);
+                console.log("Caught error");
+            })
+            .on('end', function(){
+                resolve();
+            });
+    });
+};
 
-gulp.task('default', ['sass'], function() {
-    gulp.watch('assets/scss/*.scss', ['sass']);
-})
+gulp.task('sass', sassyFunction);
+
+gulp.task('default', gulp.series(sassyFunction, function(done) {
+    gulp.watch(['assets/scss/*.scss'])
+        .on('change', gulp.series(function(event, path){
+            console.log("change");
+            sassyFunction().then(function(){
+                console.log("done");
+            });
+        }))
+        .on('unlink', gulp.series(function(event, path){
+            console.log("unlink");
+            sassyFunction().then(function(){
+                console.log("done");
+            });
+        }))
+        .on('add', gulp.series(function(event, path){
+            console.log("add");
+            sassyFunction().then(function(){
+                console.log("done");
+            });
+        }));
+}));

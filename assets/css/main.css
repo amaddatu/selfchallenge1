@@ -1,8 +1,8 @@
 .main {
-  min-width: 350px; }
+  min-width: 360px; }
 
 .animation {
-  min-width: 350px;
+  min-width: 360px;
   position: relative;
   overflow: hidden; }
   .animation #beam {
@@ -12,8 +12,8 @@
     top: 0;
     left: 0;
     z-index: 3;
-    opacity: 0;
     background: green;
+    opacity: 0;
     transition: opacity 0.3s; }
   .animation #ufo {
     opacity: 0;
@@ -38,9 +38,9 @@
   .animation #mario {
     background-image: url(../images/mario_graphics1.png);
     position: absolute;
+    z-index: 2;
     bottom: 22px;
     left: 0;
-    z-index: 2;
     transition: width 0.3s, height 0.3s, left 0.3s, bottom 0.3s;
     width: 30px;
     height: 60px;
@@ -50,7 +50,7 @@
 footer {
   border: 1px solid black; }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 360px) {
   .animation #mario {
     bottom: 50px;
     left: 3%;
@@ -61,7 +61,7 @@ footer {
   .animation #building-1 {
     left: 100%; } }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 370px) {
   .animation #mario {
     bottom: 75px;
     left: 6%;
@@ -72,7 +72,7 @@ footer {
   .animation #building-1 {
     left: 90%; } }
 
-@media screen and (min-width: 370px) {
+@media screen and (min-width: 380px) {
   .animation #mario {
     bottom: 75px;
     left: 6%;
@@ -83,7 +83,7 @@ footer {
   .animation #building-1 {
     left: 80%; } }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 390px) {
   .animation #mario {
     bottom: 100px;
     left: 9%;
@@ -94,7 +94,7 @@ footer {
   .animation #building-1 {
     left: 70%; } }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 400px) {
   .animation #mario {
     bottom: 109px;
     left: 12%;
@@ -110,7 +110,7 @@ footer {
   .animation #building-1 {
     left: 0%; } }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 410px) {
   .animation #mario {
     bottom: 109px;
     left: 12%;
@@ -130,42 +130,42 @@ footer {
   .animation #building-4 {
     left: 0%; } }
 
-@media screen and (min-width: 410px) {
+@media screen and (min-width: 420px) {
   .animation #ufo {
     opacity: 1; } }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 430px) {
   .animation #ufo {
     opacity: 1; }
   .animation #beam {
     opacity: 0.4; } }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 440px) {
   .animation #mario {
     width: 30px;
     height: 20px;
     background-size: 778% 670%;
     background-position: 440% 92.5%; } }
 
-@media screen and (min-width: 440px) {
+@media screen and (min-width: 450px) {
   .animation #mario {
     bottom: 120px; }
   .animation #beam {
     opacity: 0; } }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 460px) {
   .animation #mario {
     bottom: 50px; } }
 
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 470px) {
   .animation #mario {
     bottom: 0px; } }
 
-@media screen and (min-width: 470px) {
+@media screen and (min-width: 480px) {
   .animation #mario {
     display: none; } }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 490px) {
   .animation .air-container {
     background-image: url(../images/star-wars_po-zu_porg-sneakers.png);
     background-size: 100% auto; } }

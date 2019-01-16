@@ -4,13 +4,12 @@
   "description": "A challenge for myself",
   "main": "index.js",
   "dependencies": {
-    "hoek": "4.2.1",
-    "node-sass": "^4.9.0",
-    "tunnel-agent": "^0.6.0"
+    "node-sass": "^4.11.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1"
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-wait": "0.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
